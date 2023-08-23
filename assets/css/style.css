@@ -1,9 +1,18 @@
+/*Asterisk selector to override default browser styles*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* header style*/
 header{
     background-color: lightcoral;
 }
+/* main style*/
 main{
     background-color: lightblue;
 }
+/*footer style*/
 footer{
     background-color: orange;
 }
