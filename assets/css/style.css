@@ -33,6 +33,7 @@ h3 {
     display: none;
 }
 
+
 /* header style */
 header {
     background-color: #ffffff;
@@ -93,12 +94,18 @@ nav {
     font-size: 2rem;
 }
 
+
 /* main style*/
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
     margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
 }
+
 
 /* Hero section */
 #hero {
@@ -122,6 +129,7 @@ main {
 #cover-text>h3 {
     color: #ffffff
 }
+
 
 /* Reasons to love us style*/
 #reasons {
@@ -167,12 +175,14 @@ main {
     justify-content: center;
 }
 
+
 /*Meet-up times section*/
-#times{
+#times {
     background: url('../images/dublin-city.webp') no-repeat center center / cover;
     display: flex;
     flex-wrap: wrap;
 }
+
 #times div {
         color: #fafafa;
         background-color: rgba(0, 0, 0, .6);
@@ -200,6 +210,53 @@ main {
 #photos {
     line-height: 0;
 }
+
+
+/*Sign-up page*/
+#signup {
+    background-image: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+#signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input{
+    background: transparent;
+    color: #fafafa; 
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;   
+    padding: 0 5px;
+}
+
+.radio-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.join-button {
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+    margin-top: 20px;
+    padding: 15px 32px;
+}
+
 /*footer style*/
 #social-networks {
     text-align: center;
@@ -214,6 +271,8 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+
+
 /* Media query: large or landscape phones (576px and up)*/
 @media screen and (min-width:576px) {
     #photos{
@@ -289,6 +348,7 @@ main {
     }
 }
 
+
 /* larger devices (992px and up) */
 @media screen and (min-width:992px) {
     #menu a:hover {
@@ -298,6 +358,7 @@ main {
         column-count: 4;
     }
 }
+
 
 /* Widescreens 1200px and up*/
 @media screen and (min-width: 1200px) {    
