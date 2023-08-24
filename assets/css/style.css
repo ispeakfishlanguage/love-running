@@ -319,11 +319,13 @@ main {
         margin-top: 79px;
     }
 
-    /* Hero*/
+
+    /* Hero */
     #cover-text {
         width: 300px;
         right: 50px;
     }
+
 
     /* Reasons section*/
     #benefits-physical,
@@ -343,9 +345,31 @@ main {
         align-self: flex-end;
     }
 
+
     /*Gallery page*/
-    #photos{
+    #photos {
         column-count: 3;
+    }
+
+
+    /*Sign-up page*/
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        top: 150px;
+        left: 10%;
+    }
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+    
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
     }
 }
 
