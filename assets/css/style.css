@@ -117,6 +117,12 @@ main {
     color: #ffffff
 }
 
+/* Reasons to love us style*/
+#reasons{
+    margin: 20px auto;
+    width: 90%;
+}
+
 /*footer style*/
 #social-networks {
     text-align: center;
@@ -131,6 +137,7 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+
 
 /*Media query: tablets and larger (768px and up)*/
 @media screen and (min-width:768px) {
@@ -166,6 +173,12 @@ main {
     main {
         /* Push main content down to accommodate larger header */
         margin-top: 79px;
+    }
+
+    /* Hero*/
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 }
 
