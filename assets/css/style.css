@@ -97,7 +97,7 @@ footer{
     #menu>li{
         padding-left: 1rem;
     }
-    .nav-toggle-label{
+    #nav-toggle-label{
         display: none;
     }
     #logo{
